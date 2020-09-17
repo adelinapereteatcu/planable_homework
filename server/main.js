@@ -3,9 +3,6 @@ import Posts from '/imports/api/posts';
 import { HTTP } from 'meteor/http';
 
 Meteor.startup(() => {
-  // If the Links collection is empty, add some data.
-
-  console.log("Meteor start up");
   Posts.remove({});
 
   HTTP.get('https://www.reddit.com/r/popular.json', {}, function (error, response) {
