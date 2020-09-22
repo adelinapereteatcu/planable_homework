@@ -27,7 +27,7 @@ meteor run
 
 For visualising the database run in another command prompt:
 ```python
-meteor run
+meteor mongo
 ```
 
 To see the collections from the database use the following command: 
